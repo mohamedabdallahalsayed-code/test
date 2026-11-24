@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/test.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build:cpp": "g++ -std=c++17 -O2 src/cpp/main.cpp -o src/cpp/planner_engine.exe"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "drizzle-orm": "^0.45.4",
+    "octokit": "^5.0.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  }
+}
